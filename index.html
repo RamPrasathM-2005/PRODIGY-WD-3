@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Morrow Goods - considered objects for everyday rituals." />
+  <title>Morrow Goods | Everyday, considered.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Free shipping on orders over $75 <span aria-hidden="true">•</span> Thoughtfully made, intentionally kept.</div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Morrow Goods home">MORROW<span>®</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a>
+      <a href="#shop" data-filter-link="objects">Objects</a>
+      <a href="#shop" data-filter-link="carry">Carry</a>
+      <a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" type="button" aria-label="Open search">⌕</button>
+      <button class="icon-button bag-toggle" type="button" aria-label="Open shopping bag">Bag <span class="bag-count">0</span></button>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">The everyday edit / 01</p>
+        <h1 id="hero-title">Make room<br /><em>for good things.</em></h1>
+        <p class="hero-text">Useful objects, quiet colors, and materials that get better with time. Designed for the rhythm of your real life.</p>
+        <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-mark">✳</span><span>Small-batch<br />objects for daily rituals</span></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=85" alt="Minimal silver watch resting on a warm terracotta surface" />
+        <div class="image-label"><span>New / 2025</span><span>01 — 04</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Morrow Goods values">
+      <div>Well made <span>✦</span></div><div>Low impact <span>✦</span></div><div>Good design <span>✦</span></div><div>Long life <span>✦</span></div><div>Well made <span>✦</span></div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Curated for the considered life</p><h2 id="shop-title">The good shelf.</h2></div>
+        <a class="text-link" href="#shop">View all pieces <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter products">
+        <button class="filter-button active" data-filter="all" type="button">All pieces</button>
+        <button class="filter-button" data-filter="objects" type="button">Objects</button>
+        <button class="filter-button" data-filter="carry" type="button">Carry</button>
+        <button class="filter-button" data-filter="desk" type="button">Desk</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="objects">
+          <div class="product-image"><span class="product-tag">New</span><button class="quick-add" type="button" data-product="Arc Tray" data-price="$48">Add to bag <span>+</span></button><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80" alt="Handmade ceramic tray in warm neutral tones" loading="lazy" /></div>
+          <div class="product-info"><h3>Arc Tray</h3><p>Hand-shaped stoneware</p><strong>$48</strong></div>
+        </article>
+        <article class="product-card" data-category="carry">
+          <div class="product-image"><button class="quick-add" type="button" data-product="Day Tote" data-price="$86">Add to bag <span>+</span></button><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Structured natural canvas tote bag" loading="lazy" /></div>
+          <div class="product-info"><h3>Day Tote</h3><p>Organic cotton canvas</p><strong>$86</strong></div>
+        </article>
+        <article class="product-card" data-category="desk">
+          <div class="product-image"><button class="quick-add" type="button" data-product="Daily Pad" data-price="$24">Add to bag <span>+</span></button><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Open notebook and black pen on a desk" loading="lazy" /></div>
+          <div class="product-info"><h3>Daily Pad</h3><p>Recycled paper, 100 sheets</p><strong>$24</strong></div>
+        </article>
+        <article class="product-card" data-category="objects">
+          <div class="product-image"><span class="product-tag muted">Best seller</span><button class="quick-add" type="button" data-product="Stone Mug" data-price="$32">Add to bag <span>+</span></button><img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=80" alt="Textured ceramic coffee mug" loading="lazy" /></div>
+          <div class="product-info"><h3>Stone Mug</h3><p>Glazed ceramic, 350ml</p><strong>$32</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=1200&q=85" alt="Sunlit studio shelf with carefully arranged objects" loading="lazy" /></div>
+      <div class="story-copy"><p class="eyebrow">A slower kind of commerce</p><h2 id="story-title">Good things<br /><em>have a history.</em></h2><p>We work with small workshops and independent makers to create objects with a clear purpose and a long way to go. No rush, no clutter. Just pieces that earn their place.</p><a class="text-link" href="#story">Read our story <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-title"><div><p class="eyebrow">The Morrow note</p><h2 id="newsletter-title">A little more good<br /><em>in your inbox.</em></h2></div><form class="signup-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button class="button button-dark" type="submit">Sign me up <span aria-hidden="true">↗</span></button><p class="form-message" role="status"></p></form></section>
+  </main>
+
+  <footer class="site-footer"><a class="logo" href="#top">MORROW<span>®</span></a><p>Considered goods for everyday living.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#story">About</a><a href="#top">Instagram</a><a href="#top">Contact</a></div><small>© 2025 Morrow Goods</small></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
